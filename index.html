@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="PBG 도산 임미량 개인전 바람 '바뀌다' 2026.10.16 – 11.06 출품작 안내">
+<meta property="og:title" content="임미량 개인전 바람 '바뀌다' · PBG 도산">
+<meta property="og:description" content="2026.10.16 – 11.06 · 서울 강남구 신사동 636-4 PBG 도산">
+<meta property="og:image" content="img/w01.jpg">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}</style>
+<title>임미량 개인전 바람 '바뀌다'</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Nanum+Myeongjo:wght@400;700&display=swap">
+<style>
+/* Layout: exhibition header + work grid with a sticky selection panel (same language as the PBG booth viewer) */
+:root {
+  --bg: #ecebe7; --stage: #e3e1dc; --surface: #f8f7f4; --fg: #1c1e21; --muted: #686b70;
+  --line: #d4d1ca; --accent: #d9531e; --accent-soft: rgba(217,83,30,.12); --wall: #fbfaf7;
+  --shadow: rgba(40,36,30,.22); --scrim: rgba(20,22,25,.72);
+  --font-body: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Consolas, monospace;
+  --font-display: 'Nanum Myeongjo', 'AppleMyungjo', 'Batang', serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg: #15171a; --stage: #1a1d21; --surface: #202328; --fg: #e7e5e1; --muted: #9a9ea5; --line: #33373e; --accent: #ff7b45; --accent-soft: rgba(255,123,69,.16); --wall: #26292e; --shadow: rgba(0,0,0,.5); --scrim: rgba(0,0,0,.82); color-scheme: dark; }
+}
+:root[data-theme="dark"] { --bg: #15171a; --stage: #1a1d21; --surface: #202328; --fg: #e7e5e1; --muted: #9a9ea5; --line: #33373e; --accent: #ff7b45; --accent-soft: rgba(255,123,69,.16); --wall: #26292e; --shadow: rgba(0,0,0,.5); --scrim: rgba(0,0,0,.82); color-scheme: dark; }
+
+* { box-sizing: border-box; }
+img { max-width: 100%; }
+body { background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 14px; line-height: 1.55; }
+.wrap { max-width: 1320px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.eyebrow { font-family: var(--font-mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.mono { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+button { font: inherit; color: inherit; }
+button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* top bar */
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--surface); }
+.topbar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--surface); border-bottom: 1px solid var(--line); }
+.topbar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-block: 12px; }
+.brand { font-family: var(--font-display); font-weight: 700; font-size: 18px; letter-spacing: .02em; }
+.topbar nav { display: flex; gap: 6px; }
+.topbar nav a { font-size: 12.5px; font-weight: 500; color: var(--fg); text-decoration: none; padding: 7px 11px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); }
+.topbar nav a:hover { border-color: var(--muted); }
+
+/* hero */
+.hero { padding-block: 40px 48px; }
+.hero .wrap { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: 48px; align-items: center; }
+.hero-text { display: flex; flex-direction: column; gap: 22px; min-width: 0; }
+.hero h1 { margin: 0; font-family: var(--font-display); font-weight: 700; font-size: clamp(40px, 6vw, 72px); line-height: 1.1; letter-spacing: -.01em; text-wrap: balance; }
+.hero h1 .q { color: var(--accent); }
+.artist { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.artist strong { font-size: 20px; font-weight: 600; }
+.artist span { font-family: var(--font-mono); font-size: 12px; letter-spacing: .14em; color: var(--muted); }
+.lede { margin: 0; max-width: 34em; color: var(--muted); font-size: 15px; }
+.spec { display: grid; grid-template-columns: auto 1fr; gap: 8px 18px; margin: 0; font-size: 13.5px; border-top: 1px solid var(--line); padding-top: 18px; max-width: 440px; }
+.spec dt { color: var(--muted); }
+.spec dd { margin: 0; font-family: var(--font-mono); font-variant-numeric: tabular-nums; text-align: right; }
+.hero-art { margin: 0; background: var(--stage); border-radius: 4px; padding: clamp(20px, 5vw, 56px); display: grid; place-items: center; }
+.hero-art img { display: block; max-height: 620px; width: auto; height: auto; box-shadow: 0 14px 30px -12px var(--shadow), 0 2px 4px var(--shadow); }
+.hero-art figcaption { margin-top: 14px; font-size: 12px; color: var(--muted); justify-self: start; }
+
+/* works */
+.works { padding-block: 8px 64px; }
+.works .wrap { display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 28px; align-items: start; }
+.works-head { display: flex; flex-direction: column; gap: 14px; margin-bottom: 18px; }
+.works-head h2 { margin: 0; font-size: 22px; font-weight: 600; letter-spacing: -.01em; }
+.toolbar { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.toolbar .sep { width: 1px; height: 22px; background: var(--line); margin-inline: 4px; }
+.toolbar button { font: 500 12.5px/1 var(--font-body); color: var(--fg); background: var(--surface); border: 1px solid var(--line); padding: 8px 11px; border-radius: 6px; cursor: pointer; }
+.toolbar button:hover { border-color: var(--muted); }
+.toolbar button[aria-pressed="true"] { background: var(--fg); color: var(--surface); border-color: var(--fg); }
+.count { font-family: var(--font-mono); font-size: 11.5px; color: var(--muted); }
+
+.grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
+.card { width: 100%; text-align: left; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 0; cursor: pointer; display: flex; flex-direction: column; overflow: hidden; height: 100%; }
+.card:hover { border-color: var(--muted); }
+.card[aria-pressed="true"] { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+.tile { aspect-ratio: 1 / 1; background: var(--wall); display: grid; place-items: center; padding: 12%; position: relative; border-bottom: 1px solid var(--line); }
+.tile img { display: block; max-width: 100%; max-height: 100%; object-fit: contain; box-shadow: 0 8px 16px -8px var(--shadow), 0 1px 2px var(--shadow); transition: width .35s ease, height .35s ease; }
+.grid.scale .tile { padding: 6%; align-items: end; }
+.grid.scale .tile img { max-width: none; max-height: none; object-fit: fill; }
+.tile .floor { display: none; }
+.grid.scale .tile .floor { display: block; position: absolute; left: 6%; right: 6%; bottom: 6%; border-bottom: 1px dashed var(--line); }
+.meta { padding: 12px 13px 14px; display: flex; flex-direction: column; gap: 3px; flex: 1; }
+.meta .t { font-weight: 600; font-size: 14px; line-height: 1.35; }
+.meta .d { font-family: var(--font-mono); font-size: 11.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.meta .p { margin-top: auto; padding-top: 8px; font-family: var(--font-mono); font-size: 13px; font-weight: 500; font-variant-numeric: tabular-nums; }
+
+/* selection panel */
+.panel { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 72px); background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 20px; display: flex; flex-direction: column; gap: 18px; max-height: calc(100vh - 92px); overflow-y: auto; }
+.detail { display: flex; flex-direction: column; gap: 16px; }
+.detail .frame { background: var(--wall); border-radius: 4px; padding: 22px; display: grid; place-items: center; cursor: zoom-in; border: 0; width: 100%; }
+.detail .frame img { display: block; max-height: 300px; width: auto; height: auto; box-shadow: 0 10px 22px -10px var(--shadow), 0 1px 3px var(--shadow); }
+.detail h3 { margin: 4px 0 0; font-size: 21px; font-weight: 600; letter-spacing: -.01em; text-wrap: balance; }
+.detail .spec { max-width: none; }
+.detail dd.txt { font-family: var(--font-body); }
+.detail .price { font-size: 15px; font-weight: 500; color: var(--fg); }
+.scale-fig { display: flex; flex-direction: column; gap: 6px; }
+.scale-fig h4 { margin: 0; font-size: 12px; font-weight: 600; letter-spacing: .04em; color: var(--muted); }
+.scale-fig svg { width: 100%; height: auto; display: block; background: var(--wall); border-radius: 4px; }
+.pager { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.pager button { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 8px 12px; font-size: 12.5px; font-weight: 500; cursor: pointer; }
+.pager button:hover { border-color: var(--muted); }
+.note { font-size: 12px; color: var(--muted); margin: 0; }
+
+/* mobile sheet + lightbox */
+dialog { border: 0; padding: 0; background: transparent; max-width: 100vw; max-height: 100vh; }
+dialog::backdrop { background: var(--scrim); }
+#sheet { width: 100%; margin: auto 0 0; }
+#sheet .inner { background: var(--surface); border-radius: 14px 14px 0 0; padding: 18px max(16px, env(safe-area-inset-left, 0px)) calc(20px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-right, 0px)); max-height: 88vh; overflow-y: auto; display: flex; flex-direction: column; gap: 14px; }
+.close { align-self: flex-end; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 6px 10px; font-size: 12.5px; cursor: pointer; }
+#lightbox { width: 100vw; height: 100vh; }
+#lightbox .inner { width: 100%; height: 100%; display: grid; grid-template-rows: auto 1fr auto; gap: 10px; padding: calc(12px + env(safe-area-inset-top, 0px)) max(16px, env(safe-area-inset-right, 0px)) calc(14px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); }
+#lightbox img { width: 100%; height: 100%; object-fit: contain; min-height: 0; }
+#lightbox .cap { color: #e7e5e1; font-size: 13px; text-align: center; }
+#lightbox .close { background: transparent; color: #e7e5e1; border-color: rgba(255,255,255,.3); }
+
+footer { border-top: 1px solid var(--line); background: var(--surface); }
+footer .wrap { padding-block: 28px 36px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; font-size: 13px; }
+footer p { margin: 4px 0 0; }
+footer .brand { font-size: 16px; }
+
+@media (max-width: 960px) {
+  .hero .wrap { grid-template-columns: 1fr; gap: 28px; }
+  .hero-art { order: -1; }
+  .hero-art img { max-height: 70vh; }
+  .works .wrap { grid-template-columns: 1fr; }
+  .panel { display: none; }
+}
+@media (max-width: 520px) {
+  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .meta { padding: 10px; }
+  .meta .t { font-size: 13px; }
+  .topbar nav a.opt { display: none; }
+  .toolbar .sep { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { .tile img { transition: none; } }
+</style>
+
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand">PBG</div>
+    <nav aria-label="페이지 이동">
+      <a href="#works">출품작</a>
+      <a href="#visit" class="opt">관람 안내</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-text">
+      <div class="eyebrow">Solo Exhibition · PBG Dosan</div>
+      <div class="artist"><strong>임미량</strong><span>LIM MIRYANG</span></div>
+      <h1>바람 <span class="q">‘</span>바뀌다<span class="q">’</span></h1>
+      <p class="lede">2026년 신작을 중심으로 Going, The performance of wind, Catch!, Reminisce 등 여섯 연작의 회화 14점을 소개합니다.</p>
+      <dl class="spec">
+        <dt>기간</dt><dd>2026.10.16 – 11.06</dd>
+        <dt>장소</dt><dd>PBG 도산</dd>
+        <dt>출품</dt><dd>14점</dd>
+        <dt>가격대</dt><dd>₩1,750,000 – ₩30,000,000</dd>
+      </dl>
+    </div>
+    <figure class="hero-art">
+      <img src="img/w01.jpg" alt="임미량, Going #268, 2026. 청록 바탕 위로 파랑과 진홍의 물감 결이 바람처럼 흩어지는 회화" width="1074" height="1338">
+      <figcaption>Going #268, 2026 · 162 × 130.3 cm</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="works" id="works">
+  <div class="wrap">
+    <div>
+      <div class="works-head">
+        <div class="eyebrow">Artworks</div>
+        <h2>출품작</h2>
+        <div class="toolbar" id="series" role="group" aria-label="시리즈"></div>
+        <div class="toolbar" role="group" aria-label="정렬과 보기">
+          <button type="button" data-sort="order" aria-pressed="true">전시 순서</button>
+          <button type="button" data-sort="price-asc" aria-pressed="false">가격 낮은 순</button>
+          <button type="button" data-sort="price-desc" aria-pressed="false">가격 높은 순</button>
+          <span class="sep" aria-hidden="true"></span>
+          <button type="button" id="scaleBtn" aria-pressed="false">실제 크기 비율로 보기</button>
+          <span class="count" id="count"></span>
+        </div>
+      </div>
+      <ul class="grid" id="grid"></ul>
+    </div>
+    <aside class="panel" id="panel" aria-label="선택한 작품">
+      <div class="detail" id="detail"></div>
+    </aside>
+  </div>
+</section>
+
+<footer id="visit">
+  <div class="wrap">
+    <div>
+      <div class="brand">PBG</div>
+      <p class="eyebrow" style="margin-top:6px">Print Bakery Gallery</p>
+    </div>
+    <div>
+      <div class="eyebrow">Venue</div>
+      <p>PBG 도산<br>서울특별시 강남구 신사동 636-4</p>
+    </div>
+    <div>
+      <div class="eyebrow">Dates</div>
+      <p class="mono">2026.10.16 – 2026.11.06</p>
+    </div>
+    <div>
+      <div class="eyebrow">Note</div>
+      <p>작품 이미지는 실제 색감과 다를 수 있습니다. 판매 여부와 상세 조건은 갤러리에 문의해 주세요.</p>
+    </div>
+  </div>
+</footer>
+
+<dialog id="sheet" aria-label="작품 상세">
+  <div class="inner">
+    <button type="button" class="close" data-close>닫기</button>
+    <div class="detail" id="sheetDetail"></div>
+  </div>
+</dialog>
+
+<dialog id="lightbox" aria-label="작품 크게 보기">
+  <div class="inner">
+    <button type="button" class="close" data-close>닫기</button>
+    <img id="lbImg" alt="">
+    <div class="cap" id="lbCap"></div>
+  </div>
+</dialog>
+
+<script>
+const WORKS = [
+  { id:'going-268', t:'Going #268', s:'Going', m:'oil and pigment on canvas', h:162, w:130.3, y:2026, p:30000000, img:'01', iw:1074, ih:1338 },
+  { id:'wind-201a', t:'The performance of wind #201A', s:'The performance of wind', m:'oil on canvas', h:91, w:117, y:2026, p:15000000, img:'02', iw:1497, ih:1163 },
+  { id:'catch-48', t:'Catch! #48', s:'Catch!', m:'oil on canvas', h:91, w:73, y:2025, p:9000000, img:'03', iw:1064, ih:1338 },
+  { id:'reminisce-67', t:'Reminisce #67 Dawn', s:'Reminisce', m:'oil on canvas', h:30, w:30, y:2026, p:1750000, img:'04', iw:1330, ih:1338, framed:true },
+  { id:'going-266', t:'Going #266', s:'Going', m:'oil and acrylic on canvas', h:30, w:30, y:2026, p:1750000, img:'05', iw:1355, ih:1338, framed:true },
+  { id:'catch-62', t:'Catch! #62', s:'Catch!', m:'oil and pigment on canvas', h:97, w:130.3, y:2026, p:18000000, img:'06', iw:1497, ih:1114 },
+  { id:'for-yourself-75', t:'For Yourself #75', s:'For Yourself', m:'oil on canvas', h:72.7, w:60.6, y:2024, p:6000000, img:'07', iw:1117, ih:1338 },
+  { id:'wind-204', t:'The performance of wind #204', s:'The performance of wind', m:'oil on canvas', h:130, w:162, y:2025, p:30000000, img:'08', iw:1497, ih:1202 },
+  { id:'wind-207', t:'The performance of wind #207', s:'The performance of wind', m:'oil on canvas', h:91, w:117, y:2025, p:15000000, img:'09', iw:1497, ih:1165 },
+  { id:'reminisce-65', t:'Reminisce #65 at Dawn', s:'Reminisce', m:'oil on canvas', h:130.3, w:97, y:2026, p:18000000, img:'10', iw:1497, ih:1112 },
+  { id:'my-forest-42', t:'My Forest #42', s:'My Forest', m:'oil on canvas', h:162, w:130.3, y:2026, p:30000000, img:'11', iw:1070, ih:1338 },
+  { id:'going-159', t:'Going #159', s:'Going', m:'oil and acrylic on canvas', h:91, w:116.7, y:2023, p:15000000, img:'12', iw:1497, ih:1163 },
+  { id:'reminisce-53', t:'Reminisce #53', s:'Reminisce', m:'oil on canvas', h:73, w:61, y:2023, p:6000000, img:'13', iw:1113, ih:1338 },
+  { id:'going-131', t:'Going #131', s:'Going', m:'oil and acrylic on canvas', h:97, w:146, y:2023, p:24000000, img:'14', iw:1497, ih:918 },
+];
+WORKS.forEach((w, i) => w.n = i + 1);
+const MAX_CM = 162;
+const won = v => '₩' + v.toLocaleString('ko-KR');
+const cm = v => (Number.isInteger(v) ? v : v.toFixed(1));
+const dims = w => `${cm(w.h)} × ${cm(w.w)} cm`;
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+const state = { series: '전체', sort: 'order', scale: false, sel: WORKS[0].id };
+const $ = s => document.querySelector(s);
+const grid = $('#grid');
+const narrow = matchMedia('(max-width: 960px)');
+
+// series filter buttons
+const seriesNames = ['전체', ...new Set(WORKS.map(w => w.s))];
+$('#series').innerHTML = seriesNames.map(s => `<button type="button" data-series="${esc(s)}" aria-pressed="${s === state.series}">${esc(s)}</button>`).join('');
+
+function visible() {
+  let list = WORKS.filter(w => state.series === '전체' || w.s === state.series);
+  if (state.sort === 'price-asc') list = [...list].sort((a, b) => a.p - b.p || a.n - b.n);
+  if (state.sort === 'price-desc') list = [...list].sort((a, b) => b.p - a.p || a.n - b.n);
+  return list;
+}
+
+function tileImgStyle(w) {
+  if (!state.scale) return '';
+  // percent of the tile's inner box, longest real side = 162 cm fills the box
+  const fw = (w.w / MAX_CM) * 100, fh = (w.h / MAX_CM) * 100;
+  return `style="width:${fw}%;height:${fh}%"`;
+}
+
+function renderGrid() {
+  const list = visible();
+  grid.classList.toggle('scale', state.scale);
+  grid.innerHTML = list.map(w => `
+    <li>
+      <button type="button" class="card" data-id="${w.id}" aria-pressed="${w.id === state.sel}">
+        <div class="tile"><span class="floor"></span><img src="img/t${w.img}.jpg" alt="${esc(w.t)}" loading="lazy" ${tileImgStyle(w)}></div>
+        <div class="meta">
+          <span class="t">${esc(w.t)}</span>
+          <span class="d">${dims(w)} · ${w.y}</span>
+          <span class="p">${won(w.p)}</span>
+        </div>
+      </button>
+    </li>`).join('');
+  $('#count').textContent = `${list.length}점`;
+}
+
+function scaleSVG(w) {
+  // wall elevation: 170 cm figure beside the work, work centred at 150 cm
+  const W = 360, H = 230, floor = 215, k = 1; // 1 unit = 1 cm
+  const figX = 46, figH = 170;
+  const cx = 230, cy = floor - 150;
+  const x = cx - w.w / 2, y = cy - w.h / 2;
+  const top = floor - figH;
+  return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(w.t)} 크기 비교: ${dims(w)}, 키 170 cm 기준">
+    <line x1="8" y1="${floor}" x2="${W - 8}" y2="${floor}" stroke="var(--muted)" stroke-width="1"/>
+    <g fill="var(--line)">
+      <circle cx="${figX}" cy="${top + 11}" r="11"/>
+      <rect x="${figX - 17}" y="${top + 25}" width="34" height="70" rx="12"/>
+      <rect x="${figX - 13}" y="${top + 86}" width="11" height="${figH - 86}" rx="5"/>
+      <rect x="${figX + 2}" y="${top + 86}" width="11" height="${figH - 86}" rx="5"/>
+    </g>
+    <text x="${figX}" y="${top - 6}" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="var(--muted)">170</text>
+    <image href="img/t${w.img}.jpg" x="${x}" y="${y}" width="${w.w}" height="${w.h}" preserveAspectRatio="${w.framed ? 'xMidYMid slice' : 'none'}"/>
+    <rect x="${x}" y="${y}" width="${w.w}" height="${w.h}" fill="none" stroke="var(--fg)" stroke-opacity=".25" stroke-width="1"/>
+    <text x="${cx}" y="${y - 7}" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="var(--muted)">${cm(w.w)}</text>
+    <text x="${x + w.w + 6}" y="${cy + 3}" font-family="IBM Plex Mono, monospace" font-size="10" fill="var(--muted)">${cm(w.h)}</text>
+  </svg>`;
+}
+
+function detailHTML(w) {
+  const list = visible();
+  const idx = list.findIndex(x => x.id === w.id);
+  return `
+    <button type="button" class="frame" data-zoom="${w.id}" aria-label="${esc(w.t)} 크게 보기">
+      <img src="img/w${w.img}.jpg" alt="${esc(w.t)}, ${w.y}" width="${w.iw}" height="${w.ih}">
+    </button>
+    <div>
+      <div class="eyebrow">No. ${String(w.n).padStart(2, '0')} / ${WORKS.length} · ${esc(w.s)}</div>
+      <h3>${esc(w.t)}</h3>
+    </div>
+    <dl class="spec">
+      <dt>작가</dt><dd>임미량</dd>
+      <dt>재료</dt><dd class="txt">${esc(w.m)}</dd>
+      <dt>크기</dt><dd>${dims(w)}</dd>
+      <dt>제작</dt><dd>${w.y}</dd>
+      <dt>가격</dt><dd class="price">${won(w.p)}</dd>
+    </dl>
+    ${w.framed ? '<p class="note">사진은 액자에 설치된 모습입니다. 크기는 캔버스 기준입니다.</p>' : ''}
+    <div class="scale-fig">
+      <h4>크기 비교 · 키 170 cm 기준</h4>
+      ${scaleSVG(w)}
+    </div>
+    <div class="pager">
+      <button type="button" data-step="-1" ${idx <= 0 ? 'disabled' : ''}>← 이전 작품</button>
+      <span class="count">${idx + 1} / ${list.length}</span>
+      <button type="button" data-step="1" ${idx >= list.length - 1 ? 'disabled' : ''}>다음 작품 →</button>
+    </div>`;
+}
+
+function renderDetail() {
+  const w = WORKS.find(x => x.id === state.sel);
+  $('#detail').innerHTML = detailHTML(w);
+  if ($('#sheet').open) $('#sheetDetail').innerHTML = detailHTML(w);
+  grid.querySelectorAll('.card').forEach(c => c.setAttribute('aria-pressed', c.dataset.id === state.sel));
+}
+
+function select(id, { open = false, hash = true } = {}) {
+  state.sel = id;
+  if (hash) { try { history.replaceState(null, '', '#' + id); } catch (e) {} }
+  renderDetail();
+  if (open && narrow.matches && !$('#sheet').open) {
+    $('#sheetDetail').innerHTML = detailHTML(WORKS.find(x => x.id === id));
+    $('#sheet').showModal();
+  }
+}
+
+function step(d) {
+  const list = visible();
+  const i = list.findIndex(x => x.id === state.sel);
+  const next = list[i + d];
+  if (next) select(next.id);
+}
+
+function zoom(id) {
+  const w = WORKS.find(x => x.id === id);
+  $('#lbImg').src = `img/w${w.img}.jpg`;
+  $('#lbImg').alt = w.t;
+  $('#lbCap').textContent = `${w.t} · ${dims(w)} · ${w.y}`;
+  $('#lightbox').showModal();
+}
+
+document.addEventListener('click', e => {
+  const t = e.target.closest('button');
+  if (!t) return;
+  if (t.dataset.series) {
+    state.series = t.dataset.series;
+    document.querySelectorAll('[data-series]').forEach(b => b.setAttribute('aria-pressed', b === t));
+    renderGrid();
+    const list = visible();
+    if (!list.some(w => w.id === state.sel)) select(list[0].id, { hash: false });
+    else renderDetail();
+  } else if (t.dataset.sort) {
+    state.sort = t.dataset.sort;
+    document.querySelectorAll('[data-sort]').forEach(b => b.setAttribute('aria-pressed', b === t));
+    renderGrid(); renderDetail();
+  } else if (t.id === 'scaleBtn') {
+    state.scale = !state.scale;
+    t.setAttribute('aria-pressed', state.scale);
+    renderGrid();
+  } else if (t.classList.contains('card')) {
+    select(t.dataset.id, { open: true });
+  } else if (t.dataset.step) {
+    step(Number(t.dataset.step));
+  } else if (t.dataset.zoom) {
+    zoom(t.dataset.zoom);
+  } else if (t.hasAttribute('data-close')) {
+    t.closest('dialog').close();
+  }
+});
+['#sheet', '#lightbox'].forEach(s => $(s).addEventListener('click', e => { if (e.target === e.currentTarget) e.currentTarget.close(); }));
+document.addEventListener('keydown', e => {
+  if ($('#lightbox').open) return;
+  if (e.target.closest('input,textarea')) return;
+  if (e.key === 'ArrowRight') step(1);
+  if (e.key === 'ArrowLeft') step(-1);
+});
+
+renderGrid();
+const fromHash = WORKS.find(w => w.id === location.hash.slice(1));
+if (fromHash) {
+  select(fromHash.id, { hash: false });
+  requestAnimationFrame(() => document.querySelector(`.card[data-id="${fromHash.id}"]`)?.scrollIntoView({ block: 'center' }));
+} else renderDetail();
+</script>
+
+</body>
+</html>
